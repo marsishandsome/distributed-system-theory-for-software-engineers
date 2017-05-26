@@ -1,33 +1,34 @@
 # Distributed System Theory for Software Engineers
 
 ## First Step
-- [Distributed systems
-for fun and profit](http://book.mixu.net/distsys/)
-- [Notes on Distributed Systems for Young Bloods](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/)
-- [A Note on Distributed Computing](http://citeseerx.ist.psu.edu/viewdoc/summary)
-- [Fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)
+- [ ][Distributed systems for fun and profit by Mikito Takada](http://book.mixu.net/distsys/)
+- [ ][Notes on Distributed Systems for Young Bloods](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/)
+- [ ][A Note on Distributed Computing](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628)
+- [ ][Fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)
 
 ## Failure and Time
 - The (partial) hierarchy of failure modes
-  - [Byzantine fault tolerance](https://en.wikipedia.org/wiki/Byzantine_fault_tolerance)
+  - [x][FAILURE MODES IN DISTRIBUTED SYSTEMS](http://alvaro-videla.com/2013/12/failure-modes-in-distributed-systems.html)
 
 - How you decide whether an event happened before another event in the absence of any shared clock
-  - [Lamport clocks](http://web.stanford.edu/class/cs240/readings/lamport.pdf)
-  - [Vector clock](https://en.wikipedia.org/wiki/Vector_clock)
-  - [Dynamo](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
+  - [x][Lamport clocks](http://amturing.acm.org/p558-lamport.pdf)
+  - [x][Vector clock](https://en.wikipedia.org/wiki/Vector_clock)
+  - [x][分布式数据库中为什么要使用 Vector Clock？](https://www.zhihu.com/question/19994133)
+
 - How big an impact the possibility of even a single failure can actually have on our ability to implement correct distributed systems
-  - [ELP](http://www.slideshare.net/HenryRobinson/pwl-nonotes)
+  - [ ][ELP](http://www.slideshare.net/HenryRobinson/pwl-nonotes)
 - Different models of time: synchronous, partially synchronous and asynchronous
-  - TODO
+  - [ ]TODO
 
 ## The basic tension of fault tolerance
-- The quorum technique for ensuring single-copy serialisability
-  - [Quorum wikipedia](https://en.wikipedia.org/wiki/Quorum_(distributed_computing)
-  - [A Quorum-based Commit Protocol](https://ecommons.cornell.edu/bitstream/handle/1813/6323/82-483.pdf?sequence=1)
+- The quorum technique for ensuring single-copy serializability
+  - [ ]<a href="https://en.wikipedia.org/wiki/Quorum_(distributed_computing)">Quorum wikipedia</a>
+  - [ ][A Quorum-based Commit Protocol](https://ecommons.cornell.edu/bitstream/handle/1813/6323/82-483.pdf?sequence=1)
 - different fault-tolerance properties
-  - [Two-Phase Commit](http://the-paper-trail.org/blog/consensus-protocols-two-phase-commit/)
-  - [Three-phase Commit](http://the-paper-trail.org/blog/consensus-protocols-three-phase-commit/)
-  - [Paxos](http://the-paper-trail.org/blog/consensus-protocols-paxos/)
+  - [x][Two-Phase Commit](http://the-paper-trail.org/blog/consensus-protocols-two-phase-commit/)
+  - [ ][Sinfonia: a new paradigm for building scalable distributed systems](http://www.sosp2007.org/papers/sosp064-aguilera.pdf)
+  - [ ][Three-phase Commit](http://the-paper-trail.org/blog/consensus-protocols-three-phase-commit/)
+  - [ ][Paxos](http://the-paper-trail.org/blog/consensus-protocols-paxos/)
 - How eventual consistency, and other techniques, seek to avoid this tension at the cost of weaker guarantees about system behaviour
   - [Dynamo](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
   - [Life Beyond Transactions](http://adrianmarriott.net/logosroot/papers/LifeBeyondTxns.pdf)
