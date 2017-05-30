@@ -8,12 +8,12 @@
 
 ## Failure and Time
 - The (partial) hierarchy of failure modes
-  - [x][FAILURE MODES IN DISTRIBUTED SYSTEMS](http://alvaro-videla.com/2013/12/failure-modes-in-distributed-systems.html)
+  - [x] [FAILURE MODES IN DISTRIBUTED SYSTEMS](http://alvaro-videla.com/2013/12/failure-modes-in-distributed-systems.html)
 
 - How you decide whether an event happened before another event in the absence of any shared clock
-  - [x][Lamport clocks](http://amturing.acm.org/p558-lamport.pdf)
-  - [x][Vector clock](https://en.wikipedia.org/wiki/Vector_clock)
-  - [x][分布式数据库中为什么要使用 Vector Clock？](https://www.zhihu.com/question/19994133)
+  - [x] [Lamport clocks](http://amturing.acm.org/p558-lamport.pdf)
+  - [x] [Vector clock](https://en.wikipedia.org/wiki/Vector_clock)
+  - [x] [分布式数据库中为什么要使用 Vector Clock？](https://www.zhihu.com/question/19994133)
 
 - How big an impact the possibility of even a single failure can actually have on our ability to implement correct distributed systems
   - [ ][ELP](http://www.slideshare.net/HenryRobinson/pwl-nonotes)
