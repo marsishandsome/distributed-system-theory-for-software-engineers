@@ -25,7 +25,7 @@
   - [ ]<a href="https://en.wikipedia.org/wiki/Quorum_(distributed_computing)">Quorum wikipedia</a>
   - [ ][A Quorum-based Commit Protocol](https://ecommons.cornell.edu/bitstream/handle/1813/6323/82-483.pdf?sequence=1)
 - different fault-tolerance properties
-  - [x][Two-Phase Commit](http://the-paper-trail.org/blog/consensus-protocols-two-phase-commit/)
+  - [x] [Two-Phase Commit](http://the-paper-trail.org/blog/consensus-protocols-two-phase-commit/)
   - [ ][Sinfonia: a new paradigm for building scalable distributed systems](http://www.sosp2007.org/papers/sosp064-aguilera.pdf)
   - [ ][Three-phase Commit](http://the-paper-trail.org/blog/consensus-protocols-three-phase-commit/)
   - [ ][Paxos](http://the-paper-trail.org/blog/consensus-protocols-paxos/)
