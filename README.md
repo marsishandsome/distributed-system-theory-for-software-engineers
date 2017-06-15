@@ -32,8 +32,8 @@
   - [ ] [Sinfonia: a new paradigm for building scalable distributed systems](http://www.sosp2007.org/papers/sosp064-aguilera.pdf)
   - [ ] [Paxos](http://the-paper-trail.org/blog/consensus-protocols-paxos/)
 - How eventual consistency, and other techniques, seek to avoid this tension at the cost of weaker guarantees about system behaviour
-  - [Dynamo](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
-  - [Life Beyond Transactions](http://adrianmarriott.net/logosroot/papers/LifeBeyondTxns.pdf)
+  - [ ] [Dynamo](http://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf)
+  - [ ] [Life Beyond Transactions](http://adrianmarriott.net/logosroot/papers/LifeBeyondTxns.pdf)
 
 ## Basic primitives
 - Leader election

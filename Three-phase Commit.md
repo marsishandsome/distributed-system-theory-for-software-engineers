@@ -25,7 +25,7 @@
 简单概括一下就是，如果挂掉的那台机器已经执行了commit，那么协调者可以从所有未挂掉的参与者的状态中分析出来，并执行commit。如果挂掉的那个参与者执行了rollback，那么协调者和其他的参与者执行的肯定也是rollback操作。
 
 ## 总结
-所以，再多引入一个阶段之后，3PC解决了2PC中存在的那种由于协调者和参与者同时挂掉有可能导致的数据一致性问题。
+再多引入一个阶段之后，3PC解决了2PC中存在的那种由于协调者和参与者同时挂掉有可能导致的数据一致性问题。
 
 ## 3PC存在的问题
 在doCommit阶段，如果参与者无法及时接收到来自协调者的doCommit或者rebort请求时，会在等待超时之后，会继续进行事务的提交。
@@ -35,7 +35,7 @@
 ## Reference
 - [Consensus Protocols: Three-phase Commit](http://the-paper-trail.org/blog/consensus-protocols-three-phase-commit/)
 - [Three-phase commit protocol](https://en.wikipedia.org/wiki/Three-phase_commit_protocol)
-- [Analysis and Verification of Two-Phase Commit & Three-Phase Commit Protocols](http://www.win.tue.nl/~atif/reports/paper4ICET.pdf)
 - [深入理解分布式系统的2PC和3PC](http://www.hollischuang.com/archives/1580)
-- [Increasing the Resilience of Distributed and Replicated Database Systems](http://webee.technion.ac.il/~idish/Abstracts/jcss.html)
 - [三阶段提交协议如何避免协调者状态未知的情况？](https://www.zhihu.com/question/36899436)
+- [Increasing the Resilience of Distributed and Replicated Database Systems](http://webee.technion.ac.il/~idish/Abstracts/jcss.html)
+- [Analysis and Verification of Two-Phase Commit & Three-Phase Commit Protocols](http://www.win.tue.nl/~atif/reports/paper4ICET.pdf)
