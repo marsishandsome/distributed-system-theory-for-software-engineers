@@ -37,10 +37,9 @@
 
 ## Basic primitives
 - Leader election
-  - [Bully algorithm](https://en.wikipedia.org/wiki/Bully_algorithm)
+  - [x] [Bully algorithm](https://en.wikipedia.org/wiki/Bully_algorithm)
 - Consistent snapshotting
-  - [Distributed Snapshots: Determining Global
-States of Distributed Systems ]((https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P8-chandy-lamport.pdf)
+  - [ ] [Distributed Snapshots: Determining Global States of Distributed Systems ](https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P8-chandy-lamport.pdf)
 - Consensus
   - 2PC
   - Paxos
