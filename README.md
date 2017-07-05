@@ -1,26 +1,15 @@
 # Distributed System Theory for Software Engineers
 
-## First Step
-- [ ][Distributed systems for fun and profit by Mikito Takada](http://book.mixu.net/distsys/)
-- [ ][Notes on Distributed Systems for Young Bloods](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/)
-- [ ][A Note on Distributed Computing](http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.41.7628)
-- [ ][Fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)
+## Failure Modes
+- [x] [FAILURE MODES IN DISTRIBUTED SYSTEMS](http://alvaro-videla.com/2013/12/failure-modes-in-distributed-systems.html)
 
-## Failure and Time
-- The (partial) hierarchy of failure modes
-  - [x] [FAILURE MODES IN DISTRIBUTED SYSTEMS](http://alvaro-videla.com/2013/12/failure-modes-in-distributed-systems.html)
+## Clock
+How you decide whether an event happened before another event in the absence of any shared clock
+- [x] [Lamport clocks](http://amturing.acm.org/p558-lamport.pdf)
+- [x] [Vector clock](https://en.wikipedia.org/wiki/Vector_clock)
+- [x] [分布式数据库中为什么要使用 Vector Clock？](https://www.zhihu.com/question/19994133)
 
-- How you decide whether an event happened before another event in the absence of any shared clock
-  - [x] [Lamport clocks](http://amturing.acm.org/p558-lamport.pdf)
-  - [x] [Vector clock](https://en.wikipedia.org/wiki/Vector_clock)
-  - [x] [分布式数据库中为什么要使用 Vector Clock？](https://www.zhihu.com/question/19994133)
-
-- How big an impact the possibility of even a single failure can actually have on our ability to implement correct distributed systems
-  - [ ][ELP](http://www.slideshare.net/HenryRobinson/pwl-nonotes)
-- Different models of time: synchronous, partially synchronous and asynchronous
-  - [ ]TODO
-
-## The basic tension of fault tolerance
+## Fault Tolerance
 - The quorum technique for ensuring single-copy serializability
   - [ ]<a href="https://en.wikipedia.org/wiki/Quorum_(distributed_computing)">Quorum wikipedia</a>
   - [ ][A Quorum-based Commit Protocol](https://ecommons.cornell.edu/bitstream/handle/1813/6323/82-483.pdf?sequence=1)
@@ -39,16 +28,16 @@
 - Leader election
   - [x] [Bully algorithm](https://en.wikipedia.org/wiki/Bully_algorithm)
 - Consistent snapshotting
-  - [ ] [Distributed Snapshots: Determining Global States of Distributed Systems ](https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P8-chandy-lamport.pdf)
+  - [x] [Distributed Snapshots: Determining Global States of Distributed Systems ](https://www.cs.princeton.edu/courses/archive/fall16/cos418/docs/P8-chandy-lamport.pdf)
 - Consensus
   - 2PC
   - Paxos
 - Distributed state machine replication
   - [State machine replication wikipedia](https://en.wikipedia.org/wiki/State_machine_replication)
-  - [Lampson’s paper](https://www.microsoft.com/en-us/research/publication/how-to-build-a-highly-available-system-using-consensus/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Fblampson%2F58-consensus%2Facrobat.pdf)
+  - [Lampson’s paper: How to Build a Highly Available System Using Consensus](https://www.microsoft.com/en-us/research/publication/how-to-build-a-highly-available-system-using-consensus/?from=http%3A%2F%2Fresearch.microsoft.com%2Fen-us%2Fum%2Fpeople%2Fblampson%2F58-consensus%2Facrobat.pdf)
 
 ## Fundamental Results
-- CAP Theorem
+- [CAP Theorem](https://users.ece.cmu.edu/~adrian/731-sp04/readings/GL-cap.pdf)
 - [Papers We Love SF talk](https://www.slideshare.net/HenryRobinson/pwl-nonotes)
 
 ## Real systems
@@ -72,6 +61,12 @@
 - [RAMCloud](https://ramcloud.stanford.edu/wiki/display/ramcloud/RAMCloud+Papers)
 - [HyperDex](http://hyperdex.org/papers/)
 - [PNUTS](http://www.mpi-sws.org/~druschel/courses/ds/papers/cooper-pnuts.pdf)
+
+## First Step
+- [Distributed systems for fun and profit by Mikito Takada](http://book.mixu.net/distsys/)
+- [Notes on Distributed Systems for Young Bloods](https://www.somethingsimilar.com/2013/01/14/notes-on-distributed-systems-for-young-bloods/)
+- [A Note on Distributed Computing](http://citeseerx.ist.psu.edu/viewdoc/summary)
+- [Fallacies of distributed computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing)
 
 ## Reference
 - [machine-learning-for-software-engineers](https://github.com/ZuzooVn/machine-learning-for-software-engineers)
