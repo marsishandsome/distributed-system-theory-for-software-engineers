@@ -12,8 +12,8 @@
 2. 检测到Leader失败
 
 选举流程：
-1. 如果P是最大的ID，直接向所有人发送Victory消息，成功新的Leader；否则向所有比他大的ID的进程发送Election消息
-2. 如果P再发送Election消息后没有收到Alive消息，则P向所有人发送Victory消息，成功新的Leader
+1. 如果P是最大的ID，直接向所有人发送Victory消息，成为新的Leader；否则向所有比他大的ID的进程发送Election消息
+2. 如果P再发送Election消息后没有收到Alive消息，则P向所有人发送Victory消息，成为新的Leader
 3. 如果P收到了从比自己ID还要大的进程发来的Alive消息，P停止发送任何消息，等待Victory消息（如果过了一段时间没有等到Victory消息，重新开始选举流程）
 4. 如果P收到了比自己ID小的进程发来的Election消息，回复一个Alive消息，然后重新开始选举流程
 5. 如果P收到Victory消息，把发送者当做Leader
